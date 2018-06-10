@@ -10,5 +10,19 @@ import Foundation
 
 class Concentration
 {
-    var Cards = [Card]()
+    var cards = [Card]()
+    
+    func chooseCard(at index: Int)
+    {
+        
+    }
+    
+    init(numberOfPairsOfCards: Int)
+    {
+        for _ in 0..<numberOfPairsOfCards
+        {
+            let card = Card()
+            cards += [card, card]
+        }
+    }
 }
